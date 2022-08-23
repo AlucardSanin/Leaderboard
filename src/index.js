@@ -1,12 +1,12 @@
-import _ from 'lodash';
 import './style.css';
+import { score } from './score.js';
 
-function component() {
-    const element = document.createElement('div');
-  
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');    
-    return element;
-  }
-  
-  document.body.appendChild(component());
+const left = document.getElementById('left');
+const table = document.createElement('ul');
+
+for (let i = 0; i < 7; i += 1) {
+  const list = document.createElement('li');
+  list.innerHTML = `Name: ${score[i]}`;
+  table.appendChild(list);
+}
+left.appendChild(table);
