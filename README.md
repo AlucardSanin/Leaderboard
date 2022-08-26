@@ -1,8 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Deployment
-
-https://alucardsanin.github.io/Leaderboard/dist/
 
 > Description the project.
 
