@@ -10,13 +10,18 @@
     <div id="left">
         <div>
         <h2>Recent Scores</h2>
-        <button type="submit">Refresh</button> 
+        <button type="button" id="refresh">Refresh</button> 
         </div>       
     </div>
     <div>
         <h2>Add your score</h2>
-        <input type="text" name="user" placeholder="Your name">
-        <input type="text" name="score" placeholder="Your score">
+        <form>
+            <label for="user">User:</label>
+            <input type="text" id="user" placeholder="Your name" required>
+            <label for="score">Score:</label>
+            <input type="number" id="score" placeholder="Your score" required>
+            <button id="submit" type="button">Add</button> 
+        </form>
     </div>    
 </body>
 </html>
