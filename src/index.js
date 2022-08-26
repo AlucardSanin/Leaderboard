@@ -8,17 +8,18 @@ document.getElementById('refresh').addEventListener('click', () => {
   window.location.reload();
 });
 
-document.getElementById('submit').addEventListener('click', (e) => {
-  e.preventDefault();
+document.getElementById('submit').addEventListener('click', () => {
   const user = document.getElementById('user').value;
   const score = document.getElementById('score').value;
   MarcoPolo.addScore(user, score);
+  const form = document.querySelector('form');
+  form.reset();
 });
 
 const fillplayers = (obj) => {
   for (let i = 0; i < obj.result.length; i += 1) {
     const list = document.createElement('li');
-    list.innerHTML = `${obj.result[i].user}: ${obj.result[i].score}`;
+    list.innerHTML = `<span>${obj.result[i].user}:</span><span> ${obj.result[i].score}</span>`;
     table.appendChild(list);
   }
   left.appendChild(table);
