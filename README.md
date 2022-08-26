@@ -2,8 +2,11 @@
 
 ## Deployment
 
+https://alucardsanin.github.io/Leaderboard/dist/
+
 > Description the project.
 
+Game Web App using Leaderboard API.
 
 ## Built With
 
@@ -11,10 +14,14 @@
 - CSS
 - Javascript
 
+## Feature used
+
+-Leaderboard open API
+https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3
 
 ### Prerequisites
  - Web browser and code editor of your choice
- - 
+ 
 ### Setup
 ~~~
 git clone 
