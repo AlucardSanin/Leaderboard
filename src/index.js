@@ -1,6 +1,5 @@
-/* eslint-disable import/prefer-default-export */
 import './style.css';
-import { MarcoPolo } from './APIset.js';
+import MarcoPolo from './APIset.js';
 
 const left = document.getElementById('left');
 const table = document.createElement('ul');

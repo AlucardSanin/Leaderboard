@@ -1,5 +1,4 @@
-/* eslint-disable import/prefer-default-export */
-export class MarcoPolo {
+export default class MarcoPolo {
  static addScore = async (user, score) => {
    const idUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/4nTGw7Pv17Te8sjkTexb/scores/';
    const response = await fetch(idUrl, {
