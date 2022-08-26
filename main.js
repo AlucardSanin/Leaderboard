@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\r\\n  background-color: rgb(180, 100, 100);\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack_boilerplate/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\r\\n  background-color: rgb(251, 251, 251);\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack_boilerplate/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -110,23 +110,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/APIset.js":
+/*!***********************!*\
+  !*** ./src/APIset.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ MarcoPolo)\n/* harmony export */ });\nclass MarcoPolo {\n static addScore = async (user, score) => {\n   const idUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/4nTGw7Pv17Te8sjkTexb/scores/';\n   const response = await fetch(idUrl, {\n     method: 'POST',\n     body: JSON.stringify({\n       user,\n       score,\n     }),\n     headers: {\n       'Content-type': 'application/json; charset=UTF-8',\n     },\n   });\n   return response;\n }\n}\n\n\n//# sourceURL=webpack://webpack_boilerplate/./src/APIset.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _score_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./score.js */ \"./src/score.js\");\n\n\n\nconst left = document.getElementById('left');\nconst table = document.createElement('ul');\n\nfor (let i = 0; i < 7; i += 1) {\n  const list = document.createElement('li');\n  list.innerHTML = `Name: ${_score_js__WEBPACK_IMPORTED_MODULE_1__.score[i]}`;\n  table.appendChild(list);\n}\nleft.appendChild(table);\n\n\n//# sourceURL=webpack://webpack_boilerplate/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/score.js":
-/*!**********************!*\
-  !*** ./src/score.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"score\": () => (/* binding */ score)\n/* harmony export */ });\n// eslint-disable-next-line import/prefer-default-export\nconst score = [100, 20, 50, 78, 125, 77, 42];\n\n\n//# sourceURL=webpack://webpack_boilerplate/./src/score.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _APIset_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./APIset.js */ \"./src/APIset.js\");\n\n\n\nconst left = document.getElementById('left');\nconst table = document.createElement('ul');\n\ndocument.getElementById('refresh').addEventListener('click', () => {\n  window.location.reload();\n});\n\ndocument.getElementById('submit').addEventListener('click', (e) => {\n  e.preventDefault();\n  const user = document.getElementById('user').value;\n  const score = document.getElementById('score').value;\n  _APIset_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"].addScore(user, score);\n});\n\nconst fillplayers = (obj) => {\n  for (let i = 0; i < obj.result.length; i += 1) {\n    const list = document.createElement('li');\n    list.innerHTML = `${obj.result[i].user}: ${obj.result[i].score}`;\n    table.appendChild(list);\n  }\n  left.appendChild(table);\n};\n\nasync function getplayers() {\n  const idUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/4nTGw7Pv17Te8sjkTexb/scores/';\n  const response = await fetch(idUrl);\n  const players = await response.json();\n  fillplayers(players);\n}\n\ngetplayers();\n\n//# sourceURL=webpack://webpack_boilerplate/./src/index.js?");
 
 /***/ })
 
