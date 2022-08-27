@@ -5,6 +5,10 @@
 
 Game Web App using Leaderboard API.
 
+## Live Version
+
+https://alucardsanin.github.io/Leaderboard/
+
 ## Built With
 
 - HTML
